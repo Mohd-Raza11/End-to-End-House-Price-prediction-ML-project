@@ -27,5 +27,7 @@ deactivate
 ``` 1- git config --global user.name "name"
     2- git config --global user.email "email"
     3- git status -> to check status of git repo
+    4- git add file_name
+    5- git commit -m "git massage"
+    6- git push origin main
 ```
-6. 
