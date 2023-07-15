@@ -1,4 +1,3 @@
-# End-to-End-House-Price-prediction-ML-project
 # End-to-End-House-Price-prediction-ML-projects
 ### Software and Tools required
 1. [Github Account](https://github.com)
