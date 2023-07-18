@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data science</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data science-Project</title>
+    <style>
+      * {
+        background-color: rgb(117, 124, 167);
+      }
+      /* body{
+            background-color: rgb(2, 2, 49);
+        } */
 
-<body>
-    <h1 style="background: fixed;color: rgb(17, 17, 212);"> Welcome to the Data Science projects</h1>
-    
-</body>
+      h1 {
+        text-align: center;
+        color: rgb(19, 15, 15);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><b>Price Prediction Project</b></h1>
+    <hr/>
+    <div class="login">
+      <form action="{{url_for('predict')}}" method="post">
+        <label for="houseform">CRIM<br/></label>
+        <input type="number" name='CRIM' placeholder="crim" required="required" /><br />
+
+        <label for="houseform">ZN<br /></label>
+        <input type="number" name='ZN' required="required"/><br />
+
+        <label for="houseform">INDUS<br /></label>
+        <input type="number" name='INDUS' required="required"/><br />
+
+        <label for="houseform">CHAS<br /></label>
+        <input type="number"name='CHAS' required="required"/><br />
+
+        <label for="houseform">NX<br /></label>
+        <input type="number" name='NX' required="required" /><br />
+
+        <label for="houseform">RM<br /></label>
+        <input type="number" name='RM' required="required"/><br />
+
+        <label for="houseform">AGE<br /></label>
+        <input type="number" name='AGE' required="required"/><br />
+
+        <label for="houseform">DIS<br /></label>
+        <input type="number" name='DIS' required="required"/><br />
+
+        <label for="houseform">RED<br /></label>
+        <input type="number" name='RED'required="required"/><br />
+
+        <label for="houseform">TAX<br /></label>
+        <input type="number" name='TAX' required="required"/><br />
+
+        <label for="houseform">PTRATIO<br /></label>
+        <input type="number" name='PTRATIO' required="required"/><br />
+
+        <label for="houseform">B<br /></label>
+        <input type="number" name="B" required="required"/><br />
+
+        <label for="houseform">LSTAT<br /></label>
+        <input type="number" name='LSTAT' required="required" /><br />
+
+        <button type="submit" class="btn btn-outline-secondary">Predict</button>
+      </form>
+    </div>
+    <br />
+    <br />
+    {{prediction_text}}
+  </body>
 </html>

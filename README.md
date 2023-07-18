@@ -16,7 +16,7 @@ virtualenv env_name
 ```
 3. to activate
 ```
-.env_name\Scripts\activate
+.\env_name\Scripts\activate
 ```
 4. to deactivate
 ```
